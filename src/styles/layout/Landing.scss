@@ -1,0 +1,95 @@
+@import "../core/variables.scss";
+
+.main {
+  text-align: center;
+  &__mainPic {
+    max-height: 70vh;
+    width: 100%;
+    object-fit: cover;
+  }
+  &__section1 {
+    background-color: white;
+    padding-top: 15px;
+    // efecto superponer
+    position: relative;
+    z-index: 1;
+    transition: top 0.1s ease;
+  }
+  &__slogan {
+    margin: 0 15px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    gap: 20px;
+    &--logo {
+      aspect-ratio: 1/1;
+      width: 100px;
+    }
+    &--subtitle {
+      font-family: $title_font;
+      font-size: 25px;
+    }
+  }
+  &__categories {
+    margin: 0 45px;
+    margin-top: 10px;
+    border: 2px solid black;
+    padding: 15px;
+    margin-bottom: 15px;
+    &--title {
+      font-family: $title_font;
+      font-size: 25px;
+      padding: 20px;
+    }
+    &--list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      row-gap: 20px;
+    }
+    &--img {
+      border-radius: 50%;
+      height: 70px;
+      object-fit: cover;
+      aspect-ratio: 1/1;
+      @media only screen and (min-width: 767px) {
+        height: 120px;
+      }
+    }
+  }
+  &__secondPic {
+    max-height: 70vh;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+  }
+  &__opinions {
+    background-color: white;
+    border: 2px solid black;
+    padding: 15px;
+    margin: 15px;
+
+    &--title {
+      font-family: $title_font;
+      font-size: 21px;
+    }
+    &--container {
+      padding: 15px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 25px;
+      line-height: 25px;
+    }
+  }
+  &__instagram {
+    background-color: white;
+    border: 2px solid black;
+    padding: 15px;
+    margin: 15px;
+    &--title {
+      font-family: $title_font;
+      font-size: 21px;
+    }
+  }
+}

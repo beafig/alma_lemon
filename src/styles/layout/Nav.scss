@@ -1,0 +1,18 @@
+@import "../core/variables.scss";
+
+.navBar {
+  width: 100%;
+  height: 7vh;
+  background-color: $yellow_color;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  &__link {
+    text-decoration: none;
+    color: black;
+  }
+  &__logo {
+    aspect-ratio: 1/1;
+    width: 50px;
+  }
+}
