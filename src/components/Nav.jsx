@@ -1,29 +1,33 @@
+import { Link } from "react-router-dom";
 import "../styles/layout/Nav.scss";
 import Logo from "../images/logo.jpg";
 
 const Nav = () => {
   return (
-    <nav className="navBar">
-      <a className="navBar__link" href="">
-        <i className="fa-solid fa-house"></i>
-      </a>
-      <a className="navBar__link" href="">
-        Fotos
-      </a>
-      <a className="navBar__link" href="">
-        Preguntas
-      </a>
-      <img className="navBar__logo" src={Logo} alt="Logo Alma Lemon" />
-      <a className="navBar__link" href="">
-        Sobre mí
-      </a>
-      <a className="navBar__link" href="">
-        Contacto
-      </a>
-      <a className="navBar__link" href="">
-        RRSS
-      </a>
-    </nav>
+    <>
+      <nav className="navBar">
+        <a className="navBar__link" href="">
+          <i className="fa-solid fa-house"></i>
+        </a>
+
+        <Link className="navBar__link" to="/fotos">
+          Fotos
+        </Link>
+        <Link className="navBar__link" to="/sobreMi">
+          Sobre mí
+        </Link>
+        <img className="navBar__logo" src={Logo} alt="Logo Alma Lemon" />
+        <Link className="navBar__link" to="/preguntas">
+          Preguntas
+        </Link>
+        <Link className="navBar__link" to="/contacto">
+          Contacto
+        </Link>
+        <Link className="navBar__link" to="redes">
+          RRSS
+        </Link>
+      </nav>
+    </>
   );
 };
 export default Nav;

@@ -1,0 +1,30 @@
+@import "../core/variables.scss";
+
+.footer {
+  position: relative;
+  bottom: 0;
+  height: 10vh;
+  background-color: $yellow_color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  &__text {
+    font-size: 18px;
+  }
+  &__link {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+  }
+  &__icons {
+    color: $gray_color;
+    display: flex;
+    width: 100px;
+    justify-content: space-around;
+  }
+  &__icon {
+    color: black;
+    font-size: 20px;
+  }
+}

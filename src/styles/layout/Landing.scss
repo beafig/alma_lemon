@@ -1,6 +1,7 @@
-@import "../core/variables.scss";
+// @import "../core/variables.scss";
 
 .main {
+  min-height: 93vh;
   text-align: center;
   &__pic {
     background-image: url("../../images/fondo1.jpg");
@@ -9,7 +10,7 @@
     background-attachment: fixed;
     background-size: cover;
     max-height: 85vh;
-    height: 70%;
+    height: 80vh;
   }
   &__secondPic {
     background-image: url("../../images/fondo3.jpg") !important;
