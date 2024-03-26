@@ -1,17 +1,21 @@
 import "../styles/layout/Footer.scss";
+import Logo from "../images/logo.jpg";
 
 const Footer = () => {
   return (
     <footer className="footer">
-      <p className="footer__text">
-        Alma Limón 2024 &copy; Creado por{" "}
-        <a
-          className="footer__link"
-          href="https://www.linkedin.com/in/bea-figueroa/"
-          target="_blanck">
-          Bea
-        </a>
-      </p>
+      <div className="footer__container">
+        <img className="footer__img" src={Logo} alt="" />
+        <p className="footer__text">
+          Alma Limón 2024 &copy; Creado por{" "}
+          <a
+            className="footer__link"
+            href="https://www.linkedin.com/in/bea-figueroa/"
+            target="_blanck">
+            Bea
+          </a>
+        </p>
+      </div>
       <div className="footer__icons">
         <a
           className="footer__link"

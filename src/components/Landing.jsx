@@ -11,7 +11,7 @@ const Landing = () => {
       <Nav />
       <main className="main">
         <div className="main__pic"></div>
-        <Section1 scrollY={scrollY} />
+        <Section1 />
         <div className="main__pic main__secondPic"> </div>
         <Section2 />
       </main>
