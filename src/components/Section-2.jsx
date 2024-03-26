@@ -8,19 +8,19 @@ const Section2 = () => {
       <article className="section2__opinions">
         <h3 className="section2__opinions--title">Vuestras opiniones</h3>
         <div className="section2__opinions--container">
-          <p>
+          <p className="section2__opinions--text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
             consequuntur nisi, minus tempora praesentium vel? Accusamus libero
             minima perferendis quod commodi, facere rem a. Facilis consectetur
             inventore eum ut nemo?
           </p>
-          <p>
+          <p className="section2__opinions--text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
             consequuntur nisi, minus tempora praesentium vel? Accusamus libero
             minima perferendis quod commodi, facere rem a. Facilis consectetur
             inventore eum ut nemo?
           </p>
-          <p>
+          <p className="section2__opinions--text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
             consequuntur nisi, minus tempora praesentium vel? Accusamus libero
             minima perferendis quod commodi, facere rem a. Facilis consectetur
@@ -28,14 +28,10 @@ const Section2 = () => {
           </p>
         </div>
       </article>
-      <article className="section2__instagram">
+      {/* <article className="section2__instagram">
         <h3 className="section2__instagram--title">Instagram</h3>
-      </article>
+      </article> */}
     </section>
   );
 };
 export default Section2;
-
-// Section2.propTypes = {
-//   scrollY: PropTypes.number.isRequired,
-// };

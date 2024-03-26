@@ -1,37 +1,39 @@
 @import "../core/variables.scss";
 
 .section2 {
-  // &__container {
-  //   position: relative;
-  //   z-index: 1;
-  //   transition: top 0.1s ease;
-  // }
   &__opinions {
-    background-color: white;
     border: 2px solid black;
     padding: 15px;
-    // margin: 15px;
 
     &--title {
       font-family: $title_font;
       font-size: 25px;
+      margin-bottom: 15px;
+      @media screen and (min-width: 768px) {
+        font-size: 35px;
+      }
     }
     &--container {
-      // padding: 15px;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      column-gap: 25px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
       line-height: 25px;
+      @media screen and (min-width: 768px) {
+        flex-direction: row;
+      }
+    }
+    &--text {
+      border: 2px solid rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      padding: 5px;
     }
   }
-  &__instagram {
-    background-color: white;
-    border: 2px solid black;
-    padding: 15px;
-    // margin: 15px;
-    &--title {
-      font-family: $title_font;
-      font-size: 25px;
-    }
-  }
+  // &__instagram {
+  //   border: 2px solid black;
+  //   padding: 15px;
+  //   &--title {
+  //     font-family: $title_font;
+  //     font-size: 25px;
+  //   }
+  // }
 }

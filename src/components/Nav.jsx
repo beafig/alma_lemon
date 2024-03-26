@@ -16,7 +16,10 @@ const Nav = () => {
       {/* <a className="navBar__link" href="">
         <i className="fa-solid fa-house"></i>
       </a> */}
-      <img className="navBar__logo" src={Logo} alt="Logo Alma Lemon" />
+      <Link to={"/"}>
+        <img className="navBar__logo" src={Logo} alt="Logo Alma Lemon" />
+      </Link>
+
       <div className="navBar__menuToggle" onClick={toggleMenu}>
         <i className="fa-solid fa-bars navBar__menuToggle--icon"></i>
       </div>
