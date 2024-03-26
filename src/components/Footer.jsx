@@ -6,15 +6,18 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer__container">
         <img className="footer__img" src={Logo} alt="" />
-        <p className="footer__text">
-          Alma Limón 2024 &copy; Creado por{" "}
-          <a
-            className="footer__link"
-            href="https://www.linkedin.com/in/bea-figueroa/"
-            target="_blanck">
-            Bea
-          </a>
-        </p>
+        <div>
+          <p className="footer__text">Alma Limón&copy; 2024</p>
+          <p className="footer__text">
+            Creado por{" "}
+            <a
+              className="footer__link"
+              href="https://www.linkedin.com/in/bea-figueroa/"
+              target="_blanck">
+              Bea
+            </a>
+          </p>
+        </div>
       </div>
       <div className="footer__icons">
         <a
