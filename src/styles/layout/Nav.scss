@@ -3,7 +3,7 @@
 .navBar {
   width: 100%;
   height: 10vh;
-  background-color: $yellow_color;
+  background-color: $main_color;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,7 +46,7 @@
       top: 10vh;
       right: 0;
       width: 40%;
-      background-color: $blue_color;
+      background-color: $dark_color;
       padding: 20px;
     }
   }

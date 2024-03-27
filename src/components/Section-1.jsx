@@ -4,7 +4,7 @@ import Logo from "../images/logo.jpg";
 import boda from "../images/boda1.jpeg";
 import infantil from "../images/infantil.jpeg";
 import empresa from "../images/empresa.jpeg";
-import pareja from "../images/pareja.jpeg";
+import mascota from "../images/mascota.jpg";
 import embarazo from "../images/embarazo.jpeg";
 import social from "../images/social.jpeg";
 
@@ -38,8 +38,8 @@ const Section1 = () => {
             Empresa ·
           </Link>
           <Link to={"/pareja"} className="section1__categories--link">
-            <img className="section1__categories--img" src={pareja} alt="" />·
-            Pareja ·
+            <img className="section1__categories--img" src={mascota} alt="" />·
+            Mascota ·
           </Link>
           <Link to={"/embarazo"} className="section1__categories--link">
             <img className="section1__categories--img" src={embarazo} alt="" />·

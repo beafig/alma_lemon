@@ -2,7 +2,7 @@
 
 .footer {
   height: 10vh;
-  background-color: $yellow_color;
+  background-color: $main_color;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,7 +28,7 @@
     color: black;
   }
   &__icons {
-    color: $gray_color;
+    color: $dark_color;
     display: flex;
     width: 100px;
     justify-content: space-around;
