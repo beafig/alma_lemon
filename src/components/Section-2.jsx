@@ -1,6 +1,7 @@
 // import PropTypes from "prop-types";
 
 import "../styles/layout/Section2.scss";
+//  GET https://mybusiness.googleapis.com/v4/{parent=accounts/*/locations/*}/reviews
 
 const Section2 = () => {
   return (

@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import Fotos from "./Fotos";
+import Photos from "./Photos";
 import Landing from "./Landing";
 
 import "../styles/App.scss";
@@ -9,7 +9,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Landing />} />
-        <Route path="/fotos" element={<Fotos />} />
+        <Route path="/fotos" element={<Photos />} />
       </Routes>
     </>
   );
