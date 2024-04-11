@@ -34,6 +34,7 @@ const Section2 = () => {
         <div className="section2__instagram--container">
           <iframe className="section2__instagram--frame"
           src="https://www.instagram.com/p/C5BqoY_qTsn/embed" >
+            
           </iframe>
         <iframe className="section2__instagram--frame" 
         src="https://www.instagram.com/p/C5TDzpIqiYO/embed/" >

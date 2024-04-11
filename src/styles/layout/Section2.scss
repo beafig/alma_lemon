@@ -42,8 +42,6 @@
       }
     }
     &--container{
-      // height: fit-content;
-        // min-height: 561px;
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -52,11 +50,20 @@
           flex-direction: row;
           justify-content: space-evenly;
         }
-    }
-    &--frame{
-      height: 561px;
- 
-    }
+      }
   }
 }
 
+iframe:nth-child(1) {
+  height: 497px;
+  @media screen and (min-width: 768px) {
+    height: 480px;
+  }
+}
+
+iframe:nth-child(2) {
+  height: 583px;
+  @media screen and (min-width: 768px) {
+    height: 561px;
+  }
+}
