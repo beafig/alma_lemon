@@ -1,9 +1,9 @@
-// import PropTypes from "prop-types";
 
 import "../styles/layout/Section2.scss";
-//  GET https://mybusiness.googleapis.com/v4/{parent=accounts/*/locations/*}/reviews
+
 
 const Section2 = () => {
+
   return (
     <section className="section2">
       <article className="section2__opinions">
@@ -29,9 +29,17 @@ const Section2 = () => {
           </p>
         </div>
       </article>
-      {/* <article className="section2__instagram">
-        <h3 className="section2__instagram--title">Instagram</h3>
-      </article> */}
+      <article className="section2__instagram">
+       <h3 className="section2__instagram--title">Instagram</h3>
+        <div className="section2__instagram--container">
+          <iframe className="section2__instagram--frame"
+          src="https://www.instagram.com/p/C5BqoY_qTsn/embed" >
+          </iframe>
+        <iframe className="section2__instagram--frame" 
+        src="https://www.instagram.com/p/C5TDzpIqiYO/embed/" >
+        </iframe>
+        </div>
+      </article>
     </section>
   );
 };

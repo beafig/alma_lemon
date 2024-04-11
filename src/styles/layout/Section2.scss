@@ -1,6 +1,7 @@
 @import "../core/variables.scss";
 
 .section2 {
+  background-color: $main_color;
   &__opinions {
     border: 2px solid black;
     padding: 15px;
@@ -28,12 +29,34 @@
       padding: 5px;
     }
   }
-  // &__instagram {
-  //   border: 2px solid black;
-  //   padding: 15px;
-  //   &--title {
-  //     font-family: $title_font;
-  //     font-size: 25px;
-  //   }
-  // }
+  &__instagram {
+    border: 2px solid black;
+    padding: 15px;
+  
+    &--title {
+      font-family: $title_font;
+      font-size: 25px;
+      margin-bottom: 15px;
+      @media screen and (min-width: 768px) {
+        font-size: 35px;
+      }
+    }
+    &--container{
+      // height: fit-content;
+        // min-height: 561px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        @media screen and (min-width: 768px) {
+          flex-direction: row;
+          justify-content: space-evenly;
+        }
+    }
+    &--frame{
+      height: 561px;
+ 
+    }
+  }
 }
+
