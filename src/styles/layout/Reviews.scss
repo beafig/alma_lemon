@@ -1,0 +1,25 @@
+@import "../core/variables.scss";
+
+.weddingwireWidget{
+    border: none;
+    &__title{
+        font-family: $title_font;
+    }
+    &__btnOutline{
+        border:none;
+    }
+
+}
+.weddingwireWidget > div:nth-child(2) {
+    display: grid;
+    @media screen and (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.weddingWireWidgetReview{
+    border: none;
+    &__header{
+        padding: 10px;
+    }
+}
