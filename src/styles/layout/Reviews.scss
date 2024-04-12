@@ -1,12 +1,12 @@
 @import "../core/variables.scss";
 
 .weddingwireWidget{
-    border: none;
+    border: none!important;
     &__title{
         font-family: $title_font;
     }
     &__btnOutline{
-        border:none;
+        border:none!important;
     }
 
 }
@@ -18,7 +18,7 @@
 }
 
 .weddingWireWidgetReview{
-    border: none;
+    border: none!important;
     &__header{
         padding: 10px;
     }
