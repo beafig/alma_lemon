@@ -1,7 +1,10 @@
 import { useState } from "react";
 import { wedding1 } from "../resources/wedding";
 import "../styles/layout/Photos.scss";
+import "../styles/layout/PageTitle.scss";
+
 import { Link } from "react-router-dom";
+import Nav from "./Nav";
 
 const Photos = () => {
 
@@ -16,12 +19,14 @@ const Photos = () => {
   }
 
   return (
+    <>
+    <Nav/>
     <section className="photos">
-      <div className="photos__title--container">
-        <Link to="/" className="photos__title--link">
-        <i className="fa-solid fa-arrow-left photos__title--arrow"></i>
+      <div className="page__title--container">
+        <Link to="/" className="page__title--link">
+        <i className="fa-solid fa-arrow-left page__title--arrow"></i>
         </Link>
-        <h1 className="photos__title">Fotos</h1>
+        <h1 className="page__title">Fotos</h1>
       </div>
       <div className="photos__gallery">
         {wedding1.map((url, index) => (
@@ -35,6 +40,7 @@ const Photos = () => {
         ))}
       </div>
     </section>
+    </>
   );
 };
 export default Photos;

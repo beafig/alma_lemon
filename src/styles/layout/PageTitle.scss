@@ -1,0 +1,32 @@
+@import "../core/variables.scss";
+
+.page{
+    &__title {
+        font-family: $title_font;
+        font-size: 25px;
+        padding: 15px;
+        text-align: center;
+        @media screen and (min-width: 768px) {
+        font-size: 35px;
+        }
+        &--container{
+            position: relative;
+        }
+    
+        &--link{
+            position: absolute;
+            top: 27%;
+            left: 15px;  
+          // background-color: rgba(0, 0, 0, 0.5);
+          // margin: 0 15px;
+          // padding: 5px 10px;
+          // border-radius: 50%;
+          // width: fit-content;
+            cursor: pointer;
+        }
+        &--arrow{
+            font-size: 30px;
+            color: black;
+        }
+}
+}
